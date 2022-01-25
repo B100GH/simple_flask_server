@@ -5,11 +5,11 @@ app = Flask(__name__) # Create an Instance
 def main(): # Run the function
 	if request.method == 'POST': # Identify Request Method
 		value = request.form['input'] # Gather the Post Request
-		return value + ' Nerd'
+		return value
 	if request.method == 'GET': # Identify Request Method
 		return """ 
-<>
-<>
+<br>
+<br>
 <form method="POST" action="">
   <input type="text" name="input">
   <input type="submit">
